@@ -15,6 +15,7 @@ function reservationConfirmed(name, reservation) {
     const main = document.querySelector("main");
     main.className = "reservation-confirmed";
     h2.textContent = "Reservation confirmed!";
+    p.id = "confirmation";
     p.textContent = `${name}, thank you for your reservation for ${reservation}.`;
     main.append(h2, p);
 }
