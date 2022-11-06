@@ -1,5 +1,10 @@
+:root {
+    --medbrown: #6e4c4b;
+    --darkbrown: #2a1b1d;
+}
+
 html {
-    background: saddlebrown;
+    background: var(--darkbrown);
     font-size: 100%;
 }
 
@@ -46,7 +51,7 @@ label {
 button {
     color: white;
     cursor: pointer;
-    background: saddlebrown;
+    background: var(--darkbrown);
     border-radius: 0.5em;
     display: block;
     font-size: 1.25em;
@@ -57,7 +62,7 @@ button {
 }
 
 button:hover {
-    background: #61300d;
+    background: var(--medbrown);
 }
 
 img {
