@@ -1,0 +1,12 @@
+html {
+    background: saddlebrown;
+    font-size: 100%;
+}
+
+body {
+    background: cornsilk;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 2em;
+    text-align: center;
+}
