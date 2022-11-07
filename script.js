@@ -2,7 +2,13 @@ document.querySelector("form").addEventListener("submit", handleSubmit);
 
 function handleSubmit(e) {
     e.preventDefault();
-    const name = document.querySelector("#name").value;
+    const nameEl = document.querySelector("#name");
+    const name = nameEl.value.trim();
+    if (!name) {
+        document.querySelector(".err").textContent = "Please fill out this field";
+        nameEl.focus();
+        return;
+    }
     const select = document.querySelector("#reservation");
     const reservation = select[select.selectedIndex].textContent;
     // Simulate server delay

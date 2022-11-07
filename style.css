@@ -68,3 +68,7 @@ button:hover {
 img {
     max-width: 100%;
 }
+
+.err {
+    color: red;
+}
